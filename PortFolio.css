@@ -4,8 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .space {
   margin: 0 70px 0 70px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .nav {
@@ -61,6 +69,13 @@
   font-family: inter;
   font-size: 22px;
   margin-right: 70px;
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .nav-home {
@@ -226,50 +241,73 @@
   margin-top: 90px;
   margin-bottom: 70px;
 }
-
 .project-flex {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 100px;
 }
 
-.project-card1,
-.project-card2,
-.project-card3 {
-  height: 409px;
+.project-card {
   width: 349px;
   border-radius: 40px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card1-image,
-.card2-image,
-.card3-image {
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+}
+
+.project-image {
   height: 314px;
-  width: 349px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Example backgrounds */
+.image-rc {
+  background-image: url("/images/rc-explore.png");
+}
+
+.image-space {
+  background-image: url("/images/spacemeet.png");
+}
+
+.image-vid {
+  background-image: url("/images/vidversea.png");
 }
 
 .card-title {
-  height: 31px;
-  width: 164px;
-  font-size: 28px;
-  font-family: inter;
-  font-weight: bold;
-  margin-left: 20px;
-  margin-top: 11px;
+  font-size: 26px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  margin: 14px 20px 4px;
+}
+
+.card-desc {
+  font-size: 15px;
+  margin: 0 20px;
+  color: #444;
 }
 
 .card-see {
-  height: 19px;
-  width: 148px;
-  font-size: 16px;
-  font-family: inter;
-  margin-left: 20px;
+  display: inline-block;
+  margin: 10px 20px 20px;
+  font-size: 15px;
   color: #0089e4;
-  margin-top: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-see:hover {
+  text-decoration: underline;
 }
 
 .contact {
@@ -663,6 +701,67 @@
   .contact-para-text {
     font-size: 2rem;
   }
+}
+
+@media (max-width: 500px) {
+  .hero-image-sub {
+    height: 200px;
+    width: 200px;
+  }
+
+  .para-name {
+    font-size: 30px;
+  }
+
+  .para-yo {
+    font-size: 20px;
+  }
+
+  .para-detail {
+    font-size: 15px;
+    width: 90%;
+    margin: 10px auto 0;
+  }
+
+  .project-card1,
+  .project-card2,
+  .project-card3 {
+    max-width: 270px;
+    height: 360px;
+  }
+
+  .card1-image,
+  .card2-image,
+  .card3-image {
+    height: 240px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .card-see {
+    font-size: 14px;
+  }
+
+  .about-image {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .contact-para-text {
+    font-size: 1.4rem;
+  }
+}
+
+.social-media a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: inherit;
+}
+
+.social-media a:hover {
+  opacity: 0.8;
 }
 
 /* Tablet (768px - 1023px) */

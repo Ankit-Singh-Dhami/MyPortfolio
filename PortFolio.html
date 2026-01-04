@@ -25,17 +25,31 @@
 
         <div class="nav-menu" id="navMenu">
           <div class="close-btn" onclick="toggleMenu()">✖</div>
-          <div class="nav-home">Home</div>
-          <div class="nav-about">About</div>
-          <div class="nav-projects">Projects</div>
-          <div class="nav-skill">Skill</div>
-          <div class="nav-contact">Contact</div>
+
+          <a href="#home" class="nav-link nav-home" onclick="toggleMenu()"
+            >Home</a
+          >
+          <a href="#about" class="nav-link nav-about" onclick="toggleMenu()"
+            >About</a
+          >
+          <a
+            href="#projects"
+            class="nav-link nav-projects"
+            onclick="toggleMenu()"
+            >Projects</a
+          >
+          <a href="#skills" class="nav-link nav-skill" onclick="toggleMenu()"
+            >Skills</a
+          >
+          <a href="#contact" class="nav-link nav-contact" onclick="toggleMenu()"
+            >Contact</a
+          >
         </div>
       </div>
     </header>
     <div class="space">
       <main>
-        <hero-section>
+        <section id="home" class="hero-section">
           <div class="hero-section">
             <div class="hero-para">
               <div class="hero-sub-para">
@@ -43,11 +57,19 @@
                 <div class="para-name">Ankit Singh Dhami</div>
 
                 <div class="para-detail">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aperiam rerum optio assumenda mollitia ad ex
+                  a Web Developer and Computer Science student who enjoys
+                  building clean, scalable web applications using modern
+                  technologies.
                 </div>
 
-                <div class="para-button">Download CV</div>
+                <a
+                  href="/ankit_resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="para-button"
+                >
+                  Download CV
+                </a>
               </div>
             </div>
 
@@ -55,56 +77,87 @@
               <div class="hero-image-sub"></div>
             </div>
           </div>
-        </hero-section>
+        </section>
 
-        <about-me>
+        <section id="about" class="about">
           <div class="about">
             <div class="about-title">About Me</div>
             <div class="about-flex">
               <div class="about-para1">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam quas hic doloribus laborum, ea quidem consequatur a
-                dolorem elit. Ea distinctio quia accusantium,
+                I’m Ankit Singh Dhami, a Computer Science student and web
+                developer who has built full-stack projects including a college
+                management system, a real-time collaboration app, and a SaaS web
+                application. I enjoy turning ideas into clean, practical
+                products using modern web technologies.
               </div>
 
               <div class="about-image"></div>
 
               <div class="about-para2">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
-                assumenda amet voluptatum veritatis fugit laboriosam in dolorum
-                Lorem ipsum dolor sit amet consectetur, adipisicing
+                Beyond coding, I actively work on improving myself every
+                day—exploring creative interests, participating in innovation
+                and college activities, coordinating events, and teaching
+                frontend fundamentals to peers. I believe in consistent growth
+                and becoming better than yesterday.
               </div>
             </div>
           </div>
-        </about-me>
+        </section>
 
-        <projects>
+        <section id="projects" class="projects">
           <div class="projects">
             <div class="project-title">Projects</div>
 
             <div class="project-flex">
-              <div class="project-card1">
-                <div class="card1-image"></div>
-                <div class="card-title">RC explore</div>
-                <div class="card-see">See more</div>
+              <div class="project-card">
+                <div class="project-image image-rc"></div>
+                <h3 class="card-title">RC EXPLORE</h3>
+                <p class="card-desc">College Management Web Application</p>
+                <a
+                  class="card-see"
+                  href="https://rcexplore-jkey.onrender.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  See more
+                </a>
               </div>
-              <div class="project-card2">
-                <div class="card2-image"></div>
-                <div class="card-title">RC explore</div>
-                <div class="card-see">See more</div>
+
+              <div class="project-card">
+                <div class="project-image image-space"></div>
+                <h3 class="card-title">SpaceMeet</h3>
+                <p class="card-desc">Real-Time Collaboration Platform</p>
+                <a
+                  class="card-see"
+                  href="https://spacemeet-wheat.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  See more
+                </a>
               </div>
-              <div class="project-card3">
-                <div class="card3-image"></div>
-                <div class="card-title">RC explore</div>
-                <div class="card-see">See more</div>
+
+              <div class="project-card">
+                <div class="project-image image-vid"></div>
+                <h3 class="card-title">Vidversea</h3>
+                <p class="card-desc">AI Video SaaS Platform</p>
+                <a
+                  c
+                  class="card-see"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  See more
+                </a>
               </div>
             </div>
           </div>
-        </projects>
+        </section>
       </main>
 
       <footer>
-        <contact>
+        <section id="contact" class="contact">
           <div class="contact">
             <div class="contact-title">Contact Me</div>
 
@@ -117,14 +170,34 @@
 
               <div class="contact-social-media">
                 <div class="social-media">
-                  <i class="fa-brands fa-instagram big"></i>
-                  <i class="fa-brands fa-youtube big"></i>
-                  <i class="fa-brands fa-x-twitter big"></i>
+                  <a
+                    href="https://www.linkedin.com/in/ankit-singh-dhami-411191341/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-linkedin big"></i>
+                  </a>
+
+                  <a
+                    href="https://github.com/Ankit-Singh-Dhami"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-github big"></i>
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/ankit_singh_dhami_369/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-instagram big"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-        </contact>
+        </section>
       </footer>
     </div>
   </body>
